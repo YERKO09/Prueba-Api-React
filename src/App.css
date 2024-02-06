@@ -1,0 +1,15 @@
+body{
+    background: 
+        /* linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(219, 167, 221) 50%, rgba(0,0,0,1) 100%), */
+        linear-gradient(90deg, rgb(216, 173, 218) 0%, rgb(0, 73, 73) 50%, rgb(132, 190, 127) 100%),
+        url("assets/img/Mew.png") no-repeat left center fixed,
+        url("assets/img/Celebi.png") no-repeat right center fixed;
+    background-blend-mode: multiply;
+    background-size:auto;
+}
+
+.buscador::placeholder {
+    font-weight:600;
+    opacity: 0.7;
+    color: white;
+}
