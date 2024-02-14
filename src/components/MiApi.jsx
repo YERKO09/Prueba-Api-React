@@ -14,11 +14,14 @@ const MiApi = () => {
     consultarApi();
   }, []);
 
+
   const consultarApi = async () => {
     const baseUrl = "https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0";
     const response = await fetch(baseUrl);
     const data = await response.json();
     console.log("data completa: ",data)
+
+    //se accede al array de objetos "results" dentro de data
     const {results} = data
     //const results = data.results;
     //console.log("Variable result: ",results)
